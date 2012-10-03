@@ -2,7 +2,6 @@
 
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 set -e
-export http_proxy=http://proxy.vmware.com:3128
 
 # FUNTION TO CHECK ERROR
 function check_error()
