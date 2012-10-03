@@ -1,0 +1,13 @@
+# PARAMETERS
+PIWIK_URL="http://piwik.org/latest.zip"
+PIWIK_USER_NAME="piwik"
+PIWIK_PASSWORD="piwik"
+SITE_NAME="mysite.com"
+PIWIK_EMAIL="admin@mysite.com"
+PIWIK_HOST="localhost"
+PIWIK_DATABASE="piwik_db"
+TABLES_PREFIX="piwik"
+MYSQL_USERNAME="self:Lamp_Stack:db_root_username" # do this while deployment
+MYSQL_PASSWORD="self:Lamp_Stack:db_root_password" # do this while deployment
+DOCUMENT_ROOT="self:Lamp_Stack:document_root" # do this while deployment
+PIWIK_IP="self:ip" # do this while deployment
