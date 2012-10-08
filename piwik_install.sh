@@ -16,6 +16,23 @@ DOCUMENT_ROOT="$document_root"
 PIWIK_IP="$piwik_selfip"
 SITE_NAME="$site_name"
 
+# FUNTION TO CHECK ERROR
+function check_response_code()
+{
+   if [ "$?" = "0" ]; then
+      echo "Database Installed Successfully";
+   else
+      error_exit "Unsuccessful Installation. Error Code $?";
+   fi
+}
+
+function check_error()
+{
+   if [ ! "$?" = "0" ]; then
+      error_exit "$1";
+   fi
+}
+
 echo "INSTALLING PRE-REQUISTES"
 if [ -f /etc/redhat-release ] ; then
    echo "RHEL / CENTOS OS"
